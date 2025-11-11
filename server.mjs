@@ -23,7 +23,11 @@ app.set("views", path.join(__dirname, "views"));
 await connectToDatabase();
 
 // Routes
-app.use("/", postRoutes);
+// Redirect root to /posts
+app.get("/", (req, res) => {
+  res.redirect("/posts");
+});
+app.use("/posts", postRoutes);
 
 app.listen(PORT, () => {
   console.log(`\n🚀 Server running on http://localhost:${PORT}`);

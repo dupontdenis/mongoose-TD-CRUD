@@ -5,7 +5,7 @@
   "description": "Intro Mongoose example using ES modules",
   "main": "index.mjs",
   "scripts": {
-    "server": "node server.mjs",
+    "start": "node server.mjs",
     "populate": "node populate.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

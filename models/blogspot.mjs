@@ -16,7 +16,7 @@ const BlogPostSchema = new Schema({
 
 BlogPostSchema.virtual("url").get(function () {
   // Use a regular function (not arrow) to access 'this'
-  return `/blog/post/${this._id}`;
+  return `/posts/${this._id}`;
 });
 
 // ==============================================
