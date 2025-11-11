@@ -1,0 +1,15 @@
+<%- include('partials/header', { title: post.title + ' - Mongoose Demo' }) %>
+
+  <h1>
+    <%= post.title %>
+  </h1>
+
+  <div class="post-content">
+    <p>
+      <%= post.body %>
+    </p>
+  </div>
+
+  <p><a href="/">← Back to All Posts</a></p>
+
+  <%- include('partials/footer') %>
