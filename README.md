@@ -18,7 +18,7 @@ npm install
 npm run populate
 
 # Start the server
-npm run server
+npm run start
 ```
 
 Open: `http://localhost:3000/`
